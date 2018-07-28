@@ -51,9 +51,8 @@ function removeLastKitten() {
 } 
 
 function removeFirstKitten() {
-  var kits = kittens;
-  kittens.splice(0, 1);
-  console.log(kits);
-  console.log(kittens);
-  return kittens;
-} 
+	  var kits = kittens;
+	  console.log(kits.slice(1));
+	  console.log(kittens.slice(1));
+	  return kits;
+	}
